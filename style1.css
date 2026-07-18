@@ -68,12 +68,12 @@ body {
     border-radius: 4px;
 }
 
+/* Hero Section - المحدث لمنع التداخل مع الهيدر */
 .hero-section {
     min-height: 90vh;
     display: flex;
     align-items: center;
-    padding: 0 8%;
-    margin-top: 8rem;
+    padding: 16rem 8% 6rem 8%; /* قمنا بزيادة الـ Padding العلوي من 12rem إلى 16rem ليتحرك السطر الأزرق لأسفل بحرية */
 }
 
 .hero-container {
