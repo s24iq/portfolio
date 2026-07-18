@@ -3,127 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUFYAN Developer</title>
+    <title>Sufyan Al-Qaisi | Security Researcher & Engineer</title>
     <link rel="stylesheet" href="style1.css">
+    <!-- استدعاء خط احترافي وهادئ ومطلوب عالمياً في المواقع النظيفة -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+
+    <!-- Navbar الهادئ والنظيف -->
     <header class="header">
-        <a href="#" class="logo">SUFYAN</a>
+        <a href="#" class="logo">sfean<span>.</span></a>
         <nav class="navbar">
-            <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact" class="nav-btn">Contact</a>
         </nav>
     </header>
          
-    <!-- Home Section -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hi, I'm <span>SUFYAN</span></h1>
-            <h3>Security Researcher & Blockchain Engineer</h3>
-            <p>Specializing in Smart Contract Auditing and Secure Web3 Architecture. I leverage computer science principles to build and secure decentralized systems, ensuring robustness, deep code analysis, and top-tier vulnerability assessments.</p>
+    <!-- Hero / Intro Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-container">
+            <p class="terminal-prefix">// Security Researcher & Software Engineer</p>
+            <h1>Sufyan Al-Qaisi</h1>
+            <h2>Building and securing next-gen decentralized architecture.</h2>
+            <p class="hero-bio">Computer Science student focused on Smart Contract Auditing, Offensive Security, and Robust Backend Systems. Turning complex logical constraints into clean, uncompromised execution.</p>
             
-            <div class="btn-box">
-                <a href="#contact" class="btn">Hire Me</a>
-                <a href="mailto:sfean@example.com?subject=Let's Talk" class="btn">Let's Talk</a>
-                <a href="Sufyan_AlQaisi_CV.pdf" download="Sufyan_AlQaisi_CV.pdf" class="btn">Download CV</a>
+            <div class="action-box">
+                <a href="#projects" class="primary-btn">View Projects</a>
+                <a href="Sufyan_AlQaisi_CV.pdf" download class="secondary-btn"><i class='bx bx-download'></i> CV</a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="about-content">
-            <h2 class="heading">About <span>Me</span></h2>
-            <h3>Computer Science Student & Security Researcher</h3>
-            <p>I am a computer science student specializing in cybersecurity and decentralized systems. Experienced in source code analysis, reverse engineering, and threat modeling. I focus on finding flaws before malicious actors do, combining deep technical knowledge with an offensive mindset.</p>
-            
-            <div class="skills">
-                <div class="skill-item">
-                    <span>Smart Contract Auditing (Solidity / Web3)</span>
-                    <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
-                </div>
-                <div class="skill-item">
-                    <span>Vulnerability Assessment & Penetration Testing</span>
-                    <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
-                </div>
-                <div class="skill-item">
-                    <span>Backend Security (Python / C++)</span>
-                    <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
-                </div>
-                <div class="skill-item">
-                    <span>Secure Software Development</span>
-                    <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
-                </div>
-            </div>
+    <!-- Detailed About Section -->
+    <section class="main-section" id="about">
+        <div class="content-wrapper">
+            <h3 class="section-title">01. About Me</h3>
+            <p class="text-block">I am a deeply driven Computer Science student with a pragmatic approach to software design and defensive engineering. My core focus centers on the intersection of source code analysis, reverse engineering, and threat modeling.</p>
+            <p class="text-block">Whether performing complete logical scans on Ethereum smart contracts or building secure, compiler-optimized local runtimes, I design for edge cases, stability, and zero-trust parity.</p>
         </div>
     </section>
 
-    <!-- Services Section (Clean & Separated) -->
-    <section class="services-section" id="services">
-        <div class="global-container">
-            <h2 class="heading">Our <span>Services</span></h2>
-            <p class="section-desc">What I can bring to your next high-stakes technological project:</p>
+    <!-- Clean Tech Stack & Core Domains -->
+    <section class="main-section alternate-bg" id="skills">
+        <div class="content-wrapper">
+            <h3 class="section-title">02. Core Expertise</h3>
+            <p class="section-desc">Technologies, architectures, and engineering environments I build with every day:</p>
             
-            <div class="dynamic-grid">
-                <div class="custom-card card-border">
-                    <h3><i class='bx bx-shield-quarter'></i> Smart Contract Auditing</h3>
-                    <p>Reviewing Solidity and Web3 code for logical flaws, reentrancy attacks, and optimizing gas consumption to secure blockchain deployments.</p>
+            <div class="skills-showcase">
+                <div class="skill-category">
+                    <h4>Languages</h4>
+                    <p>C++, Python, TypeScript, Solidity, SQL, C#, Dart</p>
                 </div>
-                <div class="custom-card card-border">
-                    <h3><i class='bx bx-bug-alt'></i> Vulnerability Assessment</h3>
-                    <p>Conducting comprehensive code reviews and penetration testing across web applications to catch critical vulnerabilities before production.</p>
+                <div class="skill-category">
+                    <h4>Security & Web3</h4>
+                    <p>Smart Contract Auditing, Vulnerability Assessment, Threat Modeling, Reverse Engineering</p>
                 </div>
-                <div class="custom-card card-border">
-                    <h3><i class='bx bx-code-alt'></i> Secure Backend Dev</h3>
-                    <p>Building and refactoring robust backend logic using secure coding standards in C++, Python, and core architecture design.</p>
+                <div class="skill-category">
+                    <h4>Development</h4>
+                    <p>Secure Backend Architecture, Linux Environments (Fedora, Kali), Mobile Applications (Flutter)</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section (Clean & Separated) -->
-    <section class="portfolio-section" id="portfolio">
-        <div class="global-container">
-            <h2 class="heading">Featured <span>Projects</span></h2>
-            <p class="section-desc">A glance at some of the technical systems and architectures I've developed:</p>
+    <!-- Engineering Projects Showcase -->
+    <section class="main-section" id="projects">
+        <div class="content-wrapper">
+            <h3 class="section-title">03. Production Systems</h3>
+            <p class="section-desc">Selected technical systems designed around local security and backend parsing:</p>
             
-            <div class="dynamic-grid-portfolio">
-                <div class="custom-card">
-                    <h3>Runix IDE</h3>
-                    <p>A web-based local development environment and programming assistant configured for rapid backend execution.</p>
+            <div class="project-list">
+                <div class="project-item">
+                    <div class="project-header">
+                        <h4>Runix IDE</h4>
+                        <span class="project-tech">C++ / Backend Assistant</span>
+                    </div>
+                    <p class="project-details">A local, high-performance web-based integrated development environment and programming assistant configured natively for swift code execution and clean workspace parsing.</p>
                 </div>
-                <div class="custom-card">
-                    <h3>Secure Credential Vault</h3>
-                    <p>A local password manager application featuring local data encryption, built natively with modern frameworks.</p>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <h4>Secure Credential Vault</h4>
+                        <span class="project-tech">Flutter / Dart / Security</span>
+                    </div>
+                    <p class="project-details">A localized password manager application featuring local-first cryptographic data encryption, biometric abstraction layers, and strict secure credential storage practices.</p>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <section class="contact-section" id="contact">
-        <div class="footer-container">
-            <h2 class="massive-heading">Contact</h2>
-            <h3>Let's Secure Something Together</h3>
-            <p class="contact-text">Whether you need a comprehensive smart contract audit, vulnerability scanning, or core backend engineering, feel free to reach out directly via secure channels.</p>
+    <!-- Contact & Handshake Section -->
+    <section class="main-section alternate-bg" id="contact">
+        <div class="content-wrapper centralize">
+            <h3 class="section-title center-title">04. Establish Connection</h3>
+            <h2>Let's build and audit secure software.</h2>
+            <p class="contact-pitch">If you are looking for a rigorous contract audit, penetration testing, or resilient backend infrastructure, my lines are open.</p>
             
-            <div class="btn-center-box">
-                <a href="mailto:sfean@example.com?subject=Security Consulting Request" class="btn btn-fixed-width">Send Secure Message</a>
-            </div>
+            <a href="mailto:your.email@example.com?subject=Engineering Inquiry" class="huge-btn">Send Message</a>
 
-            <div class="bottom-social-icons">
-                <a href="https://facebook.com/sfean" target="_blank"><i class='bx bxl-facebook'></i></a>
-                <a href="https://x.com/AlqysySfya28858" target="_blank"><i class='bx bxl-twitter'></i></a>
-                <a href="https://www.linkedin.com/in/%D8%B3%D9%81%D9%8A%D8%A7%D9%86-%D8%A7%D9%84%D9%82%D9%8A%D8%B3%D9%8A-4b5767228" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://www.instagram.com/s24iq" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <div class="footer-links">
+                <a href="https://x.com/AlqysySfya28858" target="_blank"><i class='bx bxl-twitter'></i> Twitter</a>
+                <a href="https://www.linkedin.com/in/%D8%B3%D9%81%D9%8A%D8%A7%D9%86-%D8%A7%D9%84%D9%82%D9%8A%D8%B3%D9%8A-4b5767228" target="_blank"><i class='bx bxl-linkedin-square'></i> LinkedIn</a>
             </div>
         </div>
     </section>
 
-    <script src="script.js"></script>
 </body>
 </html>
