@@ -458,3 +458,144 @@ body {
     color: var(--bg-color);
     box-shadow: 0 0 1rem var(--main-color);
 }
+
+/* ==========================================================================
+   SFEAN Portfolio - Clean Separated Sections & Grid Layouts 
+   ========================================================================== */
+
+.services-section, .portfolio-section, .contact-section {
+    padding: 10rem 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-section {
+    background: var(--bg-color);
+}
+
+.portfolio-section {
+    background: var(--second-bg-color);
+}
+
+.contact-section {
+    background: var(--bg-color);
+    padding: 10rem 9% 6rem;
+}
+
+.global-container {
+    max-width: 100rem;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 80rem;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.section-desc {
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+    line-height: 1.6;
+}
+
+.dynamic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 3rem;
+    text-align: left;
+}
+
+.dynamic-grid-portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+    text-align: left;
+}
+
+.custom-card {
+    background: var(--bg-color);
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 0.1rem solid rgba(0, 171, 240, 0.2);
+}
+
+.card-border {
+    background: var(--second-bg-color);
+    border: 0.2rem solid var(--main-color);
+}
+
+.custom-card h3 {
+    color: var(--main-color);
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.custom-card p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.massive-heading {
+    font-size: 5.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.contact-section h3 {
+    font-size: 2.6rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+.contact-text {
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+    line-height: 1.6;
+}
+
+.btn-center-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.btn-fixed-width {
+    width: 25rem !important;
+}
+
+.bottom-social-icons {
+    position: relative;
+    bottom: 0;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.bottom-social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    text-decoration: none;
+    transition: .5s;
+}
+
+.bottom-social-icons a:hover {
+    background: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
