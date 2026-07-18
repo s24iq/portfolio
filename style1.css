@@ -1,21 +1,17 @@
-/* ==========================================================================
-   Sufyan Al-Qaisi - Minimalist Engineering Portfolio Design
-   ========================================================================== */
-
 :root {
-    --bg-dark: #0a0f1d;        /* أسود غامق جداً مائل لزرقة الليل */
-    --card-dark: #121829;      /* رمادي داكن هادئ للكروت */
-    --accent-blue: #38bdf8;    /* أزرق سماوي تقني وراقي جداً */
-    --text-pure: #f8fafc;      /* أبيض ناصع مريح للعين */
-    --text-muted: #94a3b8;     /* رمادي هادئ للنصوص الطويلة */
-    --border-line: #1e293b;    /* حدود خفيفة جداً لمنع البهرجة */
+    --bg-dark: #0a0f1d;
+    --card-dark: #121829;
+    --accent-blue: #38bdf8;
+    --text-pure: #f8fafc;
+    --text-muted: #94a3b8;
+    --border-line: #1e293b;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'JetBrains+Mono', 'Poppins', monospace;
+    font-family: 'JetBrains Mono', monospace;
     scroll-behavior: smooth;
 }
 
@@ -26,7 +22,6 @@ body {
     line-height: 1.7;
 }
 
-/* Header & Navigation */
 .header {
     position: fixed;
     top: 0;
@@ -73,7 +68,6 @@ body {
     border-radius: 4px;
 }
 
-/* Hero Section */
 .hero-section {
     min-height: 90vh;
     display: flex;
@@ -116,13 +110,12 @@ body {
     max-width: 65rem;
 }
 
-/* Buttons */
 .action-box {
     display: flex;
     gap: 2rem;
 }
 
-.primary-btn, .secondary-btn, .huge-btn {
+.primary-btn, .secondary-btn, .huge-btn, .project-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -144,18 +137,24 @@ body {
     transform: translateY(-2px);
 }
 
-.secondary-btn {
+.secondary-btn, .project-btn {
     border: 1px solid var(--border-line);
     color: var(--text-pure);
     padding: 1.5rem 3rem;
 }
 
-.secondary-btn:hover {
+.project-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.3rem;
+    border-color: var(--accent-blue);
+    color: var(--accent-blue);
+}
+
+.secondary-btn:hover, .project-btn:hover {
     background: var(--card-dark);
     border-color: var(--accent-blue);
 }
 
-/* Sections Global Layout */
 .main-section {
     padding: 12rem 8%;
     display: flex;
@@ -190,7 +189,6 @@ body {
     margin-bottom: 2.5rem;
 }
 
-/* Skills Grid */
 .skills-showcase {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -219,7 +217,6 @@ body {
     color: var(--text-muted);
 }
 
-/* Projects Layout */
 .project-list {
     display: flex;
     flex-direction: column;
@@ -260,7 +257,10 @@ body {
     color: var(--text-muted);
 }
 
-/* Contact & Footer Section */
+.project-action {
+    margin-top: 2rem;
+}
+
 .centralize {
     text-align: center;
 }
@@ -269,10 +269,11 @@ body {
     text-align: center;
 }
 
-.centralize h2 {
+.contact-main-heading {
     font-size: 4rem;
     letter-spacing: -1px;
     margin-bottom: 2rem;
+    color: var(--text-pure);
 }
 
 .contact-pitch {
@@ -287,6 +288,7 @@ body {
     color: var(--accent-blue);
     padding: 2rem 5rem;
     font-size: 1.6rem;
+    background: transparent;
 }
 
 .huge-btn:hover {
@@ -317,11 +319,10 @@ body {
     color: var(--accent-blue);
 }
 
-/* Responsive Scaling */
 @media (max-width: 768px) {
     .hero-container h1 { font-size: 4.5rem; }
     .hero-container h2 { font-size: 2.4rem; }
     .header { padding: 2rem 5%; }
-    .navbar { display: none; } /* يفضل عمل قائمة متجاوبة لاحقاً */
+    .navbar { display: none; }
     .main-section { padding: 8rem 5%; }
 }
